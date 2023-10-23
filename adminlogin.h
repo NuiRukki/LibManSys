@@ -17,6 +17,11 @@ public:
 
 private:
     Ui::AdminLogIn *ui;
+
+private slots:
+    void signIn();
+        // Function to check if the text in the box is = to the password
+        // and if so, open adminMain
 };
 
 #endif // ADMINLOGIN_H

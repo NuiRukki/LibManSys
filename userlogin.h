@@ -17,6 +17,11 @@ public:
 
 private:
     Ui::UserLogIn *ui;
+
+private slots:
+    void signOn();
+        // Function to check open userMain and store the full name as data for use
+        // later
 };
 
 #endif // USERLOGIN_H
