@@ -28,7 +28,13 @@ The LibManSys or Library eTracker project is a Library Management System develop
 ### Version 3.2: ###
  * Added ticket queue button (No implementation)
  * Modified adminmain.ui and adminmain.cpp for a better UI
+   * adminmain.ui is now made in the ui as opposed to the use of code in the .cpp file
  * Minor bug fixes
+   * Program crashing after entering adminmain
+   * Program crashing after adding new row
+   * Program crashing after updating rows
+   * Inadvertent creation of new columns due to the use of commas in the data cells
+   * Table view not showing
 
 ## Extra Documentation:
 The programmers made use of youtube to learn Qt. The following are a few of the videos that were viewed and studied by the programmers while learning the software:
