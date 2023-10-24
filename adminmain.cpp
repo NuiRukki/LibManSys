@@ -9,7 +9,15 @@
 #include <QPushButton>
 #include <QHBoxLayout>
 #include <QInputDialog>
+    // INPUTDIALOG IS OPPPP I LOVE YOUUUUUU
+    // CRUD
+
 #include <QMessageBox>
+    // For telling the user if they've done something wrong
+
+#include <QSortFilterProxyModel>
+    // For sorting
+
 //#include <QDir>
     // Just needed QDir to find out whr my text file was, dont mind that (￣_￣|||)
 
@@ -32,15 +40,18 @@ adminMain::adminMain(QWidget *parent) :
     QPushButton *addButton = new QPushButton("Add", this);
     QPushButton *updateButton = new QPushButton("Update", this);
     QPushButton *deleteButton = new QPushButton("Delete", this);
+    QPushButton *sortButton = new QPushButton("Sort", this);
     connect(addButton, &QPushButton::clicked, this, &adminMain::addRow);
     connect(updateButton, &QPushButton::clicked, this, &adminMain::updateRow);
     connect(deleteButton, &QPushButton::clicked, this, &adminMain::deleteRow);
+    connect(sortButton, &QPushButton::clicked, this, &adminMain::sortTable);
 
     // Layout Setup
     QHBoxLayout *layout = new QHBoxLayout();
     layout->addWidget(addButton);
     layout->addWidget(updateButton);
     layout->addWidget(deleteButton);
+    layout->addWidget(sortButton);
     layout->addWidget(tableView);
         // For some reason it didnt work with the buttons/table I placed in the UI
         // Soooo resort to this and it worked- somehow-
@@ -148,6 +159,30 @@ void adminMain::deleteRow()
         saveData("bookRepository.txt");
     }
 }
+
+void adminMain::sortTable()
+{
+    bool ok;
+    QStringList columnNames;
+    for (int col = 0; col < model->columnCount(); ++col) {
+        columnNames << model->horizontalHeaderItem(col)->text();
+    }
+
+    QString item = QInputDialog::getItem(this, "Sort Table", "Select a column to sort by:", columnNames, 0, false, &ok);
+
+    if (ok) {
+        int column = columnNames.indexOf(item);
+
+        if (column != -1) {
+            model->sort(column, Qt::AscendingOrder);
+            // Update the view
+            model->submit(); // May require calling submit() to refresh the view
+        } else {
+            QMessageBox::information(this, "Sort Table", "Invalid column selected.");
+        }
+    }
+}
+
 
 QStringList adminMain::getBookData()
 {

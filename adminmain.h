@@ -27,6 +27,9 @@ public:
     void deleteRow();
         // Function to delete existing books
 
+    void sortTable();
+        // Function to sort the table
+
     QStringList getBookData();
         // Function called when executing function addRow and updateRow
         // Asks the user to input the data needed to create a book
