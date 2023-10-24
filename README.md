@@ -18,3 +18,4 @@ RCive++ Project Repository for CPE104L Module 2
 
 ### Ver 3.1: ###
  * Added sorting functionality
+   * Can sort by ID, Book Name, Book Author, Genre, Number of Units in Inventory, and Description
