@@ -32,14 +32,14 @@ The LibManSys or Library eTracker project is a Library Management System develop
 
 ## Extra Documentation:
 The programmers made use of youtube to learn Qt. The following are a few of the videos that were viewed and studied by the programmers while learning the software:
-[How To Install Qt Creator on Windows 11 (2023)](https://www.youtube.com/watch?v=OoVNt-KJ96w) by ProgrammingKnowledge
-[How to get started with Qt Creator | C++ GUI | Libraries | Qt Designer | Cross platform](https://www.youtube.com/watch?v=H2ud-ATLIdI) by Code, Tech, and Tutorials
-[Qt Crash Course for Beginners - Create C++ GUI Apps](https://www.youtube.com/watch?v=cXojtB8vS2E) by Sciber
-[Qt Tutorial 2 : C++ Calculator](https://www.youtube.com/watch?v=txGRU7OrTZo) by Derek Banas
-[Qt Tutorial : C++ Notepad App](https://www.youtube.com/watch?v=I96uPDifZ1w) by Derek Banas
-[Qt Tutorials For Beginners 9 - How to Show Another Window From MainWindow in QT](https://www.youtube.com/watch?v=VigUMAfE2q4) by ProgrammingKnowledge
-[QT C++ GUI Tutorial 12- How to open a new window after successful Login](https://www.youtube.com/watch?v=EAD8x7z75tU) by ProgrammingKnowledge
-[Pass Data Between Windows - PyQt5 GUI Thursdays #25](https://www.youtube.com/watch?v=hdR1pE35ad4) by Codemy.com
-[Qt C++ GUI Application Tutorial | Qt QFile | QTextStream | Read And Write Data In CSV File Using Qt](https://www.youtube.com/watch?v=BTwOLCBWcnE) by Qt With Ketan
-[Qt C++ GUI Application Tutorial | Qt QFile | How To Read And Write File](https://www.youtube.com/watch?v=FM5i_nep08c) by Qt With Ketan
-[QT C++ GUI Tutorial 17- Load SqLite table data to QTableView](https://www.youtube.com/watch?v=OrHitqwJu8Q) by ProgrammingKnowledge
+* [How To Install Qt Creator on Windows 11 (2023)](https://www.youtube.com/watch?v=OoVNt-KJ96w) by ProgrammingKnowledge
+* [How to get started with Qt Creator | C++ GUI | Libraries | Qt Designer | Cross platform](https://www.youtube.com/watch?v=H2ud-ATLIdI) by Code, Tech, and Tutorials
+* [Qt Crash Course for Beginners - Create C++ GUI Apps](https://www.youtube.com/watch?v=cXojtB8vS2E) by Sciber
+* [Qt Tutorial 2 : C++ Calculator](https://www.youtube.com/watch?v=txGRU7OrTZo) by Derek Banas
+* [Qt Tutorial : C++ Notepad App](https://www.youtube.com/watch?v=I96uPDifZ1w) by Derek Banas
+* [Qt Tutorials For Beginners 9 - How to Show Another Window From MainWindow in QT](https://www.youtube.com/watch?v=VigUMAfE2q4) by ProgrammingKnowledge
+* [QT C++ GUI Tutorial 12- How to open a new window after successful Login](https://www.youtube.com/watch?v=EAD8x7z75tU) by ProgrammingKnowledge
+* [Pass Data Between Windows - PyQt5 GUI Thursdays #25](https://www.youtube.com/watch?v=hdR1pE35ad4) by Codemy.com
+* [Qt C++ GUI Application Tutorial | Qt QFile | QTextStream | Read And Write Data In CSV File Using Qt](https://www.youtube.com/watch?v=BTwOLCBWcnE) by Qt With Ketan
+* [Qt C++ GUI Application Tutorial | Qt QFile | How To Read And Write File](https://www.youtube.com/watch?v=FM5i_nep08c) by Qt With Ketan
+* [QT C++ GUI Tutorial 17- Load SqLite table data to QTableView](https://www.youtube.com/watch?v=OrHitqwJu8Q) by ProgrammingKnowledge
