@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "qstandarditemmodel.h"
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -14,6 +15,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    QStandardItemModel *model;
+        // Makes it possible to access model in other parts of the program
 
 private:
     Ui::MainWindow *ui;

@@ -11,6 +11,14 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+//    model = new QStandardItemModel(this);
+//    model->setColumnCount(5);
+        // This is for the txt file
+        // 5 because: ID, Book Name, Book Author, Genre, Inventory
+
+//    model->setHorizontalHeaderLabels(QStringList() << "ID" << "Book Name" << "Author" << "Genre" << "Inventory");
+
+
     QPushButton *button[2];
     for (int i = 1; i != 3; i++) {
         QString butName = "Button" + QString::number(i);
