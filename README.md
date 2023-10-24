@@ -2,7 +2,7 @@
 RCive++ Project Repository for CPE104L Module 2
 
 ## Description:
-The LibManSys or Library eTracker project is a Library Management System developed using C++ and [Qt](https://www.qt.io/). Key features of the program include the ability to perform CRUD operations, Searching and Sorting, a GUI, a ticketing system for book borrowing, and a way to manage these tickets automatically. 
+The LibManSys or Library eTracker project is a Library Management System developed using C++ and [Qt](https://www.qt.io/). Key features of the program include the ability to perform CRUD operations, Searching and Sorting, a GUI, a ticketing system for book borrowing, and a way to manage these tickets automatically. The project is being worked on and developed by RCive++, a group of 3 beginner programmers.
 
 ## Project Versions:
 
