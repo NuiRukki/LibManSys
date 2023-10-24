@@ -78,3 +78,4 @@ The programmers also made use of google and various websites to help in navigati
 * [QTCreator changing permissions of files](https://stackoverflow.com/questions/50911796/qtcreator-changing-permissions-of-files) - Stack overflow
 * [Building and Running an Example](https://doc.qt.io/qtcreator/creator-build-example-application.html) - Qt
 * [Build Systems](https://doc.qt.io/qtcreator/creator-project-other.html) - Qt
+* [Changing location of header file causes missing vtable error when compiling with CMake](https://stackoverflow.com/questions/56435647/changing-location-of-header-file-causes-missing-vtable-error-when-compiling-with) - Stack overflow
