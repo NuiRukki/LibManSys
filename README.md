@@ -43,3 +43,15 @@ The programmers made use of youtube to learn Qt. The following are a few of the 
 * [Qt C++ GUI Application Tutorial | Qt QFile | QTextStream | Read And Write Data In CSV File Using Qt](https://www.youtube.com/watch?v=BTwOLCBWcnE) by Qt With Ketan
 * [Qt C++ GUI Application Tutorial | Qt QFile | How To Read And Write File](https://www.youtube.com/watch?v=FM5i_nep08c) by Qt With Ketan
 * [QT C++ GUI Tutorial 17- Load SqLite table data to QTableView](https://www.youtube.com/watch?v=OrHitqwJu8Q) by ProgrammingKnowledge
+
+The programmers also made use of google and various websites to help in navigating and programming in Qt. The following are links to a few of the websites:
+* [Qt for Beginners](https://wiki.qt.io/Qt_for_Beginners) - Qt
+* [Handling CSV](https://wiki.qt.io/Handling_CSV) - Qt
+* [Presenting Data in a Table View](https://doc.qt.io/qt-6/sql-presenting.html) - Qt
+* [Passing Data Between 2 Windows](https://stackoverflow.com/questions/19200598/passing-data-between-2-windows-qt) - Stack overflow
+* [QDialog Class](https://doc.qt.io/qt-6/qdialog.html) - Qt
+* [QObject Class](https://doc.qt.io/qt-6/qobject.html) - Qt
+* [Qt creator throws permission error on project (files owned by me) within directory of root)](https://superuser.com/questions/639968/qt-creator-throws-permission-error-on-project-files-owned-by-me-within-directo) - Stack Exchange
+* [QTCreator changing permissions of files](https://stackoverflow.com/questions/50911796/qtcreator-changing-permissions-of-files) - Stack overflow
+* [Building and Running an Example](https://doc.qt.io/qtcreator/creator-build-example-application.html) - Qt
+* [Build Systems](https://doc.qt.io/qtcreator/creator-project-other.html) - Qt
