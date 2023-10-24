@@ -30,41 +30,25 @@ adminMain::adminMain(QWidget *parent) :
     model = new QStandardItemModel(this);
     model->setColumnCount(6);
     model->setHorizontalHeaderLabels(QStringList() << "ID" << "Book Name" << "Author" << "Genre" << "Inventory" << "Description");
-        // ID, Book Name, Author, Genre, Inventory
-        // For the table
 
-    tableView = new QTableView(this);
+    tableView = findChild<QTableView*>("tableView");
     tableView->setModel(model);
+    tableView->setSortingEnabled(true);  // Enable sorting.
 
-    // Buttons & Functions
-    QPushButton *addButton = new QPushButton("Add", this);
-    QPushButton *updateButton = new QPushButton("Update", this);
-    QPushButton *deleteButton = new QPushButton("Delete", this);
-    QPushButton *sortButton = new QPushButton("Sort", this);
+    QPushButton *addButton = findChild<QPushButton*>("addBook");
+    QPushButton *updateButton = findChild<QPushButton*>("updateBook");
+    QPushButton *deleteButton = findChild<QPushButton*>("deleteBook");
+    QPushButton *sortButton = findChild<QPushButton*>("sortTable");
+
     connect(addButton, &QPushButton::clicked, this, &adminMain::addRow);
     connect(updateButton, &QPushButton::clicked, this, &adminMain::updateRow);
     connect(deleteButton, &QPushButton::clicked, this, &adminMain::deleteRow);
     connect(sortButton, &QPushButton::clicked, this, &adminMain::sortTable);
 
-    // Layout Setup
-    QHBoxLayout *layout = new QHBoxLayout();
-    layout->addWidget(addButton);
-    layout->addWidget(updateButton);
-    layout->addWidget(deleteButton);
-    layout->addWidget(sortButton);
-    layout->addWidget(tableView);
-        // For some reason it didnt work with the buttons/table I placed in the UI
-        // Soooo resort to this and it worked- somehow-
-        // I want to question it but at the same time I don't
-        // ;-;
-
-    QWidget *widget = new QWidget(this);
-    widget->setLayout(layout);
-    setLayout(layout);
-
     // Load data from txt
     loadData("bookRepository.txt");
 }
+
 
 
 adminMain::~adminMain()
@@ -175,8 +159,7 @@ void adminMain::sortTable()
 
         if (column != -1) {
             model->sort(column, Qt::AscendingOrder);
-            // Update the view
-            model->submit(); // May require calling submit() to refresh the view
+            model->submit();
         } else {
             QMessageBox::information(this, "Sort Table", "Invalid column selected.");
         }
@@ -199,7 +182,7 @@ QStringList adminMain::getBookData()
             }
             if (!repeat) {
                 bookData.append(field);
-                // oh hey I actually used what I thought of
+                // I actually got to use what I thought of q(≧▽≦q)
             }
         } while (repeat == true);
 

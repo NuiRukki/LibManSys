@@ -6,6 +6,8 @@
 #include <QMainWindow>
 #include <QStandardItemModel>
 #include <QTableView>
+#include <QSortFilterProxyModel>
+#include <QtAlgorithms>
 
 namespace Ui {
 class adminMain;
@@ -53,7 +55,6 @@ private:
     Ui::adminMain *ui;
     QTableView *tableView;
     QStandardItemModel *model;
-
 
 };
 
