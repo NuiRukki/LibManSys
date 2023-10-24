@@ -42,6 +42,7 @@ D:\QT Projects\build-LibManSys-Desktop_x86_windows_msys_pe_64bit-Debug
 
 ### Version 3.2: ###
  * Added ticket queue button (No implementation)
+ * Added new category 'description'
  * Modified adminmain.ui and adminmain.cpp for a better UI
    * adminmain.ui is now made in the ui as opposed to the use of code in the .cpp file
  * Minor bug fixes
@@ -49,7 +50,7 @@ D:\QT Projects\build-LibManSys-Desktop_x86_windows_msys_pe_64bit-Debug
    * Program crashing after adding new row
    * Program crashing after updating rows
    * Inadvertent creation of new columns due to the use of commas in the data cells
-     * Program now makes use of vertical lines("|") to separate data in the txt file
+     * Program now makes use of vertical lines("|") to separate data in the txt file as opposed to commas(","). This is due to the new 'description' column.
    * Table view not showing
 
 ## Extra Documentation:
