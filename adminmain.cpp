@@ -39,6 +39,9 @@ adminMain::adminMain(QWidget *parent) :
     }
 
     ui->tableView->setModel(model);
+    // This code reads the csv on execution
+
+
 
     QPushButton *button[4];
     button[1] = adminMain::findChild<QPushButton *>("Button1");
