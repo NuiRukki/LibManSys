@@ -25,6 +25,9 @@ The following files are unnecessary:
 * userlogin.h
 * userlogin.cpp
 * userlogin.ui
+* usersignon.h
+* usersignon.cpp
+* usersignon.ui
 
 ## Project Versions:
 
