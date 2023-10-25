@@ -51,7 +51,7 @@ The following files are unnecessary:
    * Can sort by ID, Book Name, Book Author, Genre, Number of Units in Inventory, and Description
 
 ### Version 3.2: ###
-// * Added ticket queue button (No implementation)
+ * Added ticket queue button (No implementation)
  * Added new category 'description'
  * Modified adminmain.ui and adminmain.cpp for a better UI
    * adminmain.ui is now made in the ui as opposed to the use of code in the .cpp file
