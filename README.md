@@ -13,6 +13,11 @@ However the names of these folders may be dependent on the name of the project f
 
 The text file also makes use of vertical lines ("|") to separate data. When adding a book to the repository, do not use this character as it will make the program create a new column. In the event that this occurs, navigate to the **bookRepository.txt** file and clear out its contents. Refer to the above paragraph to find the file.
 
+The following files are unnecessary:
+* userlogin.h
+* userlogin.cpp
+* userlogin.ui
+
 In the case of the programmers, the directories are:
 
 D:\QT Projects\LibManSys
