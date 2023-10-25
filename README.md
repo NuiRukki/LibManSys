@@ -41,7 +41,7 @@ D:\QT Projects\build-LibManSys-Desktop_x86_windows_msys_pe_64bit-Debug
    * Can sort by ID, Book Name, Book Author, Genre, Number of Units in Inventory, and Description
 
 ### Version 3.2: ###
- * Added ticket queue button (No implementation)
+// * Added ticket queue button (No implementation)
  * Added new category 'description'
  * Modified adminmain.ui and adminmain.cpp for a better UI
    * adminmain.ui is now made in the ui as opposed to the use of code in the .cpp file
@@ -52,6 +52,19 @@ D:\QT Projects\build-LibManSys-Desktop_x86_windows_msys_pe_64bit-Debug
    * Inadvertent creation of new columns due to the use of commas in the data cells
      * Program now makes use of vertical lines("|") to separate data in the txt file as opposed to commas(","). This is due to the new 'description' column.
    * Table view not showing
+
+### Version 4: ###
+ * Created UI for usermain.ui
+   * tableView
+   * 4 Buttons
+     * borrowBook - Implemented
+     * returnBook
+     * searchTable - Implemented
+     * sortTable - Implemented
+ * Known Issues:
+   * Sorting sorts by first number if using ID, Inventory
+   * Searching is overly-specific, making it difficult to search by description
+   * Borrow Book merely creates a text file containing user name and book id or book name
 
 ## Extra Documentation:
 The programmers made use of youtube to learn Qt. The following are a few of the videos that were viewed and studied by the programmers while learning the software:
