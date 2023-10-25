@@ -55,7 +55,6 @@ private:
     Ui::adminMain *ui;
     QTableView *tableView;
     QStandardItemModel *model;
-
 };
 
 #endif // ADMINMAIN_H

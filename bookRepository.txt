@@ -1,0 +1,100 @@
+1|To Kill a Mockingbird|Harper Lee|Fiction|10|A classic novel set in the American South.
+2|1984|George Orwell|Science Fiction|5|A dystopian vision of the future.
+3|The Great Gatsby|F. Scott Fitzgerald|Fiction|8|A tale of the Roaring Twenties.
+4|Pride and Prejudice|Jane Austen|Romance|12|A classic love story.
+5|The Hobbit|J.R.R. Tolkien|Fantasy|6|A magical adventure.
+6|The Catcher in the Rye|J.D. Salinger|Fiction|7|A coming-of-age novel.
+7|Brave New World|Aldous Huxley|Science Fiction|4|A utopian/dystopian vision of society.
+8|To the Lighthouse|Virginia Woolf|Fiction|3|A modernist masterpiece.
+9|Moby-Dick|Herman Melville|Adventure|9|A legendary tale of the sea.
+10|The Odyssey|Homer|Epic|14|The ancient Greek epic.
+11|Frankenstein|Mary Shelley|Horror|6|The classic tale of a monster.
+12|Jane Eyre|Charlotte Bronte|Romance|11|A gothic love story.
+13|War and Peace|Leo Tolstoy|Historical Fiction|5|An epic novel of Russian society.
+14|The Lord of the Rings|J.R.R. Tolkien|Fantasy|3|A fantasy epic.
+15|The Shining|Stephen King|Horror|6|A psychological horror novel.
+16|One Hundred Years of Solitude|Gabriel Garcia Marquez|Magical Realism|8|A tale of a magical town.
+17|The Road|Cormac McCarthy|Dystopian|5|A post-apocalyptic journey.
+18|Crime and Punishment|Fyodor Dostoevsky|Psychological Fiction|7|A novel of guilt and redemption.
+19|The Grapes of Wrath|John Steinbeck|Historical Fiction|9|A story of the Great Depression.
+20|The Alchemist|Paulo Coelho|Adventure|12|A quest for treasure.
+21|The Picture of Dorian Gray|Oscar Wilde|Gothic|6|A tale of vanity and corruption.
+22|The Sun Also Rises|Ernest Hemingway|Fiction|8|Lost generation novel.
+23|Wuthering Heights|Emily Bronte|Gothic|10|A tale of love and revenge.
+24|Slaughterhouse-Five|Kurt Vonnegut|Science Fiction|5|A time-traveling anti-war novel.
+25|Dracula|Bram Stoker|Gothic|7|A classic vampire story.
+26|Les Miserables|Victor Hugo|Historical Fiction|4|The story of Jean Valjean.
+27|The Count of Monte Cristo|Alexandre Dumas|Adventure|6|A tale of revenge.
+28|Heart of Darkness|Joseph Conrad|Psychological Fiction|11|A journey into the Congo.
+29|Don Quixote|Miguel de Cervantes|Adventure|13|The classic story of a delusional knight.
+30|A Tale of Two Cities|Charles Dickens|Historical Fiction|8|The novel set during the French Revolution.
+31|The Scarlet Letter|Nathaniel Hawthorne|Historical Fiction|9|A story of sin and redemption.
+32|The Old Man and the Sea|Ernest Hemingway|Adventure|7|The story of Santiago and the marlin.
+33|The Giver|Lois Lowry|Dystopian|10|A dystopian society without memories.
+34|Lord of the Flies|William Golding|Adventure|6|A tale of survival and savagery.
+35|The Martian|Andy Weir|Science Fiction|12|An astronaut's struggle for survival on Mars.
+36|The Hitchhiker's Guide to the Galaxy|Douglas Adams|Science Fiction|9|A comedic space adventure.
+37|20,000 Leagues Under the Sea|Jules Verne|Adventure|5|Captain Nemo's underwater world.
+38|The Hunger Games|Suzanne Collins|Dystopian|8|A fight to the death in a dystopian future.
+39|The Name of the Wind|Patrick Rothfuss|Fantasy|7|The tale of Kvothe the Arcane.
+40|Dune|Frank Herbert|Science Fiction|11|A desert planet's epic story.
+41|Ender's Game|Orson Scott Card|Science Fiction|6|Child prodigies in a war against aliens.
+42|The Girl with the Dragon Tattoo|Stieg Larsson|Mystery|8|A gripping modern mystery.
+43|The Wind in the Willows|Kenneth Grahame|Children's Fiction|10|A classic tale of animals.
+44|The Secret Garden|Frances Hodgson Burnett|Children's Fiction|9|A tale of healing and growth.
+45|Watership Down|Richard Adams|Fantasy|6|A rabbit's epic adventure.
+46|The Little Prince|Antoine de Saint-Exupéry|Children's Fiction|12|The story of the little prince.
+47|The Catcher in the Rye|J.D. Salinger|Fiction|7|A coming-of-age novel.
+48|Brave New World|Aldous Huxley|Science Fiction|4|A utopian/dystopian vision of society.
+49|To the Lighthouse|Virginia Woolf|Fiction|3|A modernist masterpiece.
+50|Moby-Dick|Herman Melville|Adventure|9|A legendary tale of the sea.
+51|The Odyssey|Homer|Epic|14|The ancient Greek epic.
+52|Frankenstein|Mary Shelley|Horror|6|The classic tale of a monster.
+53|Jane Eyre|Charlotte Bronte|Romance|11|A gothic love story.
+54|War and Peace|Leo Tolstoy|Historical Fiction|5|An epic novel of Russian society.
+55|The Lord of the Rings|J.R.R. Tolkien|Fantasy|3|A fantasy epic.
+56|The Shining|Stephen King|Horror|6|A psychological horror novel.
+57|One Hundred Years of Solitude|Gabriel Garcia Marquez|Magical Realism|8|A tale of a magical town.
+58|The Road|Cormac McCarthy|Dystopian|5|A post-apocalyptic journey.
+59|Crime and Punishment|Fyodor Dostoevsky|Psychological Fiction|7|A novel of guilt and redemption.
+60|The Grapes of Wrath|John Steinbeck|Historical Fiction|9|A story of the Great Depression.
+61|The Hound of the Baskervilles|Arthur Conan Doyle|Mystery|7|A classic Sherlock Holmes mystery.
+62|The Great Expectations|Charles Dickens|Historical Fiction|8|A tale of ambition and betrayal.
+63|The Chronicles of Narnia|C.S. Lewis|Fantasy|5|A magical world of adventure.
+64|The Da Vinci Code|Dan Brown|Mystery|6|A thrilling quest for a hidden secret.
+65|The Catch-22|Joseph Heller|Satire|4|A satirical war novel.
+66|The Art of War|Sun Tzu|Philosophy|10|Ancient wisdom on strategy.
+67|The Stranger|Albert Camus|Philosophical Fiction|9|An exploration of existentialism.
+68|The Road Less Traveled|M. Scott Peck|Self-Help|12|A guide to personal growth.
+69|The Brothers Karamazov|Fyodor Dostoevsky|Philosophical Fiction|7|A novel of moral dilemmas.
+70|The Adventures of Tom Sawyer|Mark Twain|Adventure|11|A classic tale of childhood adventures.
+71|The Iliad|Homer|Epic|14|The ancient Greek epic of the Trojan War.
+72|The Divine Comedy|Dante Alighieri|Epic Poetry|6|A journey through Hell, Purgatory, and Heaven.
+73|The Handmaid's Tale|Margaret Atwood|Dystopian|8|A dystopian society where women are oppressed.
+74|The Book Thief|Markus Zusak|Historical Fiction|7|A story of a girl during World War II.
+75|The Jungle|Upton Sinclair|Social Commentary|5|Exposing the harsh realities of the meatpacking industry.
+76|The Outsiders|S.E. Hinton|Young Adult|9|A story of teenage gangs and conflicts.
+77|The Road to Serfdom|F.A. Hayek|Economics|4|A classic in economic and political thought.
+78|The Glass Castle|Jeannette Walls|Memoir|6|A memoir of resilience and family.
+79|The Grapes of Wrath|John Steinbeck|Historical Fiction|9|A story of the Great Depression.
+80|The Wind-Up Bird Chronicle|Haruki Murakami|Magical Realism|8|A surreal journey through Japan.
+81|The Nightingale|Kristin Hannah|Historical Fiction|7|A tale of two sisters in World War II.
+82|The Silent Patient|Alex Michaelides|Psychological Thriller|6|A gripping psychological mystery.
+83|The Girl on the Train|Paula Hawkins|Thriller|9|A psychological thriller of secrets and lies.
+84|The Color Purple|Alice Walker|Historical Fiction|5|An exploration of race and feminism.
+85|The Power of One|Bryce Courtenay|Historical Fiction|8|A coming-of-age story in South Africa.
+86|The Help|Kathryn Stockett|Historical Fiction|7|A novel about race and social change in the 1960s.
+87|The Night Circus|Erin Morgenstern|Fantasy|6|A magical competition between two young illusionists.
+88|The Goldfinch|Donna Tartt|Literary Fiction|5|A novel about a stolen painting and a boy's life.
+89|The Catcher in the Rye|J.D. Salinger|Fiction|7|A coming-of-age novel.
+90|The Secret Garden|Frances Hodgson Burnett|Children's Fiction|9|A tale of healing and growth.
+91|Watership Down|Richard Adams|Fantasy|6|A rabbit's epic adventure.
+92|The Little Prince|Antoine de Saint-Exupéry|Children's Fiction|12|The story of the little prince.
+93|The Road Less Traveled|M. Scott Peck|Self-Help|12|A guide to personal growth.
+94|The Brothers Karamazov|Fyodor Dostoevsky|Philosophical Fiction|7|A novel of moral dilemmas.
+95|The Art of War|Sun Tzu|Philosophy|10|Ancient wisdom on strategy.
+96|The Divine Comedy|Dante Alighieri|Epic Poetry|6|A journey through Hell, Purgatory, and Heaven.
+97|The Adventures of Tom Sawyer|Mark Twain|Adventure|11|A classic tale of childhood adventures.
+98|The Iliad|Homer|Epic|14|The ancient Greek epic of the Trojan War.
+99|The Silent Patient|Alex Michaelides|Psychological Thriller|6|A gripping psychological mystery.
+100|The Color Purple|Alice Walker|Historical Fiction|5|An exploration of race and feminism.

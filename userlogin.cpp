@@ -1,30 +1,24 @@
 #include "userlogin.h"
 #include "ui_userlogin.h"
 
-#include "usermain.h"
-
-UserLogIn::UserLogIn(QWidget *parent) :
+userLogIn::userLogIn(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::UserLogIn)
+    ui(new Ui::userLogIn)
 {
     ui->setupUi(this);
 
-    QPushButton *button = UserLogIn::findChild<QPushButton *>("pushButton");
-    connect(button, SIGNAL(released()), this, SLOT(signOn()));
+    // Dialog Button thinga ma bob
+    connect(ui->buttonBox, &QDialogButtonBox::accepted, this, &userLogIn::ok);
+    connect(ui->buttonBox, &QDialogButtonBox::rejected, this, &QDialog::reject);
 }
 
-UserLogIn::~UserLogIn()
+userLogIn::~userLogIn()
 {
     delete ui;
 }
 
-void UserLogIn::signOn() {
+void userLogIn::ok() {
 
-    QString userFullName = ui->lineEdit->text();
-    userMain letsgo;
-    this->hide();
-    letsgo.setModal(true);
-    letsgo.exec();
 
+    accept();
 }
-

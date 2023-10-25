@@ -69,19 +69,19 @@ void adminMain::addRow()
 void adminMain::updateRow()
 {
     // Ask admin for ID of book to update
-    QString idToUpdate = QInputDialog::getText(this, "Update Book", "Enter the ID of the book to update:");
+    QString idToUpdate = QInputDialog::getText(this, "Update Book", "Enter the ID of the book to update").trimmed();
+
 
     // Find row with matching ID
     int rowCount = model->rowCount();
     int rowToUpdate = -1;
     for (int row = 0; row < rowCount; ++row)
     {
-        if (model->data(model->index(row, 0)).toString() == idToUpdate)
+        if (model->data(model->index(row, 0)).toString().trimmed() == idToUpdate) // Use trimmed() here as well
         {
             rowToUpdate = row;
             break;
-        } // Findie!
-        // Finds the book with matching ID
+        }
     }
 
     // Check if ID exists
@@ -105,7 +105,7 @@ void adminMain::updateRow()
                 // if empty, keep whats already there
             } else {
                 // For Commas (THIS HURT TO CODE FSR)
-                if (field.contains(",")) {
+                if (field.contains("|")) {
                     QMessageBox::critical(this, "Invalid Input", "Input cannot contain commas.");
                     return;
                     // I prolly coulda just used a do while loop with an if condition
@@ -176,7 +176,7 @@ QStringList adminMain::getBookData()
         do {
             QString field = QInputDialog::getText(this, "Enter Data", QString("Enter %1:").arg(model->horizontalHeaderItem(col)->text()));
             repeat = false;
-            if (field.contains(",")) {
+            if (field.contains("|")) {
                 QMessageBox::critical(this, "Invalid Input", "Input cannot contain commas.");
                 repeat = true;
             }
@@ -214,7 +214,7 @@ void adminMain::loadData(const QString &filename)
         while (!in.atEnd())
         {
             QString line = in.readLine();
-            QStringList fields = line.split(",");
+            QStringList fields = line.split("|");
             QList<QStandardItem *> row = createRow(fields);
             model->appendRow(row);
         }
@@ -236,7 +236,7 @@ void adminMain::saveData(const QString &filename)
             {
                 rowData.append(model->item(row, col)->text());
             }
-            out << rowData.join(",") << "\n";
+            out << rowData.join("|") << "\n";
         }
         file.close();
     }

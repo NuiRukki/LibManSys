@@ -4,24 +4,22 @@
 #include <QDialog>
 
 namespace Ui {
-class UserLogIn;
+class userLogIn;
 }
 
-class UserLogIn : public QDialog
+class userLogIn : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit UserLogIn(QWidget *parent = nullptr);
-    ~UserLogIn();
+    explicit userLogIn(QWidget *parent = nullptr);
+    ~userLogIn();
 
 private:
-    Ui::UserLogIn *ui;
+    Ui::userLogIn *ui;
 
 private slots:
-    void signOn();
-        // Function to check open userMain and store the full name as data for use
-        // later
+    void ok();
 };
 
 #endif // USERLOGIN_H

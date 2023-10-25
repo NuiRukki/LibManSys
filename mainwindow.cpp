@@ -3,7 +3,7 @@
 #include "adminlogin.h"
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-#include "userlogin.h"
+#include "usermain.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -47,7 +47,7 @@ void MainWindow::buttonPressed() {
         // converting it from QString to string
 
     if (name == "User") {
-        UserLogIn uLogIn;
+        userMain uLogIn;
         this->hide();
         uLogIn.setModal(true);
         uLogIn.exec();
