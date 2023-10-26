@@ -80,6 +80,10 @@ The following files are unnecessary:
  * Created Ticketing implementation
  * Missing feature: **Once a book has been borrowed or is no longer in inventory, pending tickets with the same book will be automatically cancelled.**
 
+### Version 6: ###
+ * Feature **Once a book has been borrowed or is no longer in inventory, pending tickets with the same book will be automatically cancelled.** implemented
+   * I am OVER THE MOON. I FINALLY DID IT AFTER 15 HOURS AFTER PRESENTATION. (If we include the past few days, probably around 27-34 hours or so! just for that!)
+
 ## Extra Documentation:
 The programmers made use of youtube to learn Qt. The following are a few of the videos that were viewed and studied by the programmers while learning the software:
 * [How To Install Qt Creator on Windows 11 (2023)](https://www.youtube.com/watch?v=OoVNt-KJ96w) by ProgrammingKnowledge
