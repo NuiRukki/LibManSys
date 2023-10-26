@@ -118,6 +118,7 @@ void userMain::searchTable() {
     }
 }
 
+
 void userMain::borrowBook() {
     bool ok;
     QString userName = QInputDialog::getText(this, "Enter User's Name", "User's Name:", QLineEdit::Normal, "", &ok);
@@ -138,7 +139,7 @@ void userMain::borrowBook() {
                         QFile file("borrowedBooks.txt");
                         if (file.open(QIODevice::Append | QIODevice::Text)) {
                             QTextStream out(&file);
-                            out << "User: " << userName << " | Book: " << bookNameOrID << "\n";
+                            out << userName << " | " << bookNameOrID << "\n";
                             file.close();
                         }
                     } else {
@@ -154,5 +155,3 @@ void userMain::borrowBook() {
         }
     }
 }
-
-

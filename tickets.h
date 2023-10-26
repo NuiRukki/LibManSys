@@ -28,19 +28,21 @@ private:
     QStandardItemModel *model;
     QTableView *tableView;
     QQueue<QStringList> ticketQueue;
+    QTableView *tableView2;
+    QStandardItemModel *model2;
+    QTableView *tableView3;
+    QStandardItemModel *model3;
 
 private slots:
     void loadData(const QString &filename);
+    void loadData2(const QString &filename);
+    void loadData3(const QString &filename);
     void acceptTicket();
     void rejectTicket();
     void goToAdmin();
     void addRowsToQueue();
     void saveData(const QString &filename, const QList<QStringList> &data);
-    void checkAndRemoveOutOfStockBooks();
 
-//    connect(accept, &QPushButton::clicked, this, &tickets::acceptTicket);
-//    connect(reject, &QPushButton::clicked, this, &tickets::rejectTicker);
-//    connect(goBack, &QPushButton::clicked, this, &tickets::goToAdmin);
 };
 
 #endif // TICKETS_H
