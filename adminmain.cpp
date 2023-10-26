@@ -21,6 +21,8 @@
 //#include <QDir>
     // Just needed QDir to find out whr my text file was, dont mind that (￣_￣|||)
 
+#include "tickets.h"
+
 adminMain::adminMain(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::adminMain)
@@ -39,11 +41,13 @@ adminMain::adminMain(QWidget *parent) :
     QPushButton *updateButton = findChild<QPushButton*>("updateBook");
     QPushButton *deleteButton = findChild<QPushButton*>("deleteBook");
     QPushButton *sortButton = findChild<QPushButton*>("sortTable");
+    QPushButton *ticket = findChild<QPushButton*>("ticketView");
 
     connect(addButton, &QPushButton::clicked, this, &adminMain::addRow);
     connect(updateButton, &QPushButton::clicked, this, &adminMain::updateRow);
     connect(deleteButton, &QPushButton::clicked, this, &adminMain::deleteRow);
     connect(sortButton, &QPushButton::clicked, this, &adminMain::sortTable);
+    connect(ticket, &QPushButton::clicked, this, &adminMain::ticketQueueOpen);
 
     // Load data from txt
     loadData("bookRepository.txt");
@@ -56,8 +60,7 @@ adminMain::~adminMain()
     delete ui;
 }
 
-void adminMain::addRow()
-{
+void adminMain::addRow(){
     // Get data from admin
     QStringList rowData = getBookData();
     model->appendRow(createRow(rowData));
@@ -65,9 +68,7 @@ void adminMain::addRow()
     // Save to txt file
     saveData("bookRepository.txt");
 }
-
-void adminMain::updateRow()
-{
+void adminMain::updateRow(){
     // Ask admin for ID of book to update
     QString idToUpdate = QInputDialog::getText(this, "Update Book", "Enter the ID of the book to update").trimmed();
 
@@ -130,8 +131,7 @@ void adminMain::updateRow()
     }
 }
 
-void adminMain::deleteRow()
-{
+void adminMain::deleteRow(){
     QModelIndexList selectedRows = tableView->selectionModel()->selectedRows();
 
     if (!selectedRows.isEmpty())
@@ -144,8 +144,7 @@ void adminMain::deleteRow()
     }
 }
 
-void adminMain::sortTable()
-{
+void adminMain::sortTable(){
     bool ok;
     QStringList columnNames;
     for (int col = 0; col < model->columnCount(); ++col) {
@@ -167,8 +166,7 @@ void adminMain::sortTable()
 }
 
 
-QStringList adminMain::getBookData()
-{
+QStringList adminMain::getBookData(){
     QStringList bookData;
     bool repeat = false;
     for (int col = 0; col < 6; col++)
@@ -191,8 +189,7 @@ QStringList adminMain::getBookData()
     return bookData;
 }
 
-QList<QStandardItem *> adminMain::createRow(const QStringList &data)
-{
+QList<QStandardItem *> adminMain::createRow(const QStringList &data){
     QList<QStandardItem *> row;
     for (const QString &item : data)
     {
@@ -202,8 +199,7 @@ QList<QStandardItem *> adminMain::createRow(const QStringList &data)
     return row;
 }
 
-void adminMain::loadData(const QString &filename)
-{
+void adminMain::loadData(const QString &filename){
     QFile file(filename);
     if (file.open(QIODevice::ReadOnly | QIODevice::Text))
     {
@@ -223,8 +219,7 @@ void adminMain::loadData(const QString &filename)
     }
 }
 
-void adminMain::saveData(const QString &filename)
-{
+void adminMain::saveData(const QString &filename){
     QFile file(filename);
     if (file.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Truncate))
     {
@@ -241,3 +236,27 @@ void adminMain::saveData(const QString &filename)
         file.close();
     }
 }
+
+void adminMain::ticketQueueOpen(){
+    tickets q;
+    this->hide();
+    q.setModal(true);
+    q.exec();
+}
+
+void adminMain::updateBookInventory(const QString &bookTitle) {
+    for (int row = 0; row < model->rowCount(); ++row) {
+        QString bookInTable = model->data(model->index(row, 1)).toString();
+        if (bookInTable.contains(bookTitle, Qt::CaseInsensitive)) {
+            int inventory = model->data(model->index(row, 4)).toInt();
+            if (inventory > 0) {
+                inventory--;
+                model->setData(model->index(row, 4), inventory, Qt::DisplayRole);
+                saveData("bookRepository.txt");
+                return;
+            }
+        }
+    }
+    QMessageBox::information(this, "Book Not Found", "The book with title " + bookTitle + " was not found or is out of stock.");
+}
+

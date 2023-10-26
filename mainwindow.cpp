@@ -11,14 +11,6 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-//    model = new QStandardItemModel(this);
-//    model->setColumnCount(5);
-        // This is for the txt file
-        // 5 because: ID, Book Name, Book Author, Genre, Inventory
-
-//    model->setHorizontalHeaderLabels(QStringList() << "ID" << "Book Name" << "Author" << "Genre" << "Inventory");
-
-
     QPushButton *button[2];
     for (int i = 1; i != 3; i++) {
         QString butName = "Button" + QString::number(i);
@@ -29,7 +21,6 @@ MainWindow::MainWindow(QWidget *parent)
         // buttonPressed() on the signal 'release' of button.
         // Had an error here that connected Button0 and Button1 with the
         // Function instead of Button1 and Button2.
-
 }
 
 MainWindow::~MainWindow()
@@ -61,7 +52,4 @@ void MainWindow::buttonPressed() {
         // Administrator button. After which hides the main window, makes it so
         // that you can only interact with the new window, and executes that
         // window from what I understand
-
-
-
 }

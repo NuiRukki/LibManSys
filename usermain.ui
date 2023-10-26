@@ -54,13 +54,6 @@
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QPushButton" name="returnBook">
-      <property name="text">
-       <string>Return Book</string>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QLabel" name="label">

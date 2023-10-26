@@ -39,17 +39,18 @@ public:
 
     QList<QStandardItem *> createRow(const QStringList &data);
         // Function that creates rows
-        // Is called by loadDataFromTextFile and addRow
 
     void loadData(const QString &filename);
         // Function that loads in the text file.
 
     void saveData(const QString &filename);
         // Saves data to the text file.
-        // Is called by functions addRow, updateRow, and deleteRow
 
+    void ticketQueueOpen();
+        // Opens ticket queue
 
-
+    void updateBookInventory(const QString& bookTitle);
+        // For use by tickets
 
 private:
     Ui::adminMain *ui;

@@ -36,9 +36,4 @@ void AdminLogIn::signIn() {
         // password is password!
         // Also no ***** stuff!
         // If it works it works!
-
-        // I have 0 clue why, but if pass = password, it executes the else statement
-        // and if pass != password, it executes the if statement??
-        // Whatever, the logic works but is the other way around. I'll just place the
-        // Code the other way around too!
 }

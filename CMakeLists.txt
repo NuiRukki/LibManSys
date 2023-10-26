@@ -27,7 +27,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         adminlogin.h adminlogin.cpp adminlogin.ui
         adminmain.h adminmain.cpp adminmain.ui
         usermain.h usermain.cpp usermain.ui
-        tickets.ui
+        tickets.h tickets.cpp tickets.ui
+
 
     )
 # Define target properties for Android with Qt 6 as:

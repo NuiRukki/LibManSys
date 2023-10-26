@@ -27,7 +27,6 @@ userMain::userMain(QWidget *parent) :
     connect(borrowButton, &QPushButton::clicked, this, &userMain::borrowBook);
     connect(searchButton, &QPushButton::clicked, this, &userMain::searchTable);
 
-
     loadData("bookRepository.txt");
 }
 
@@ -78,7 +77,6 @@ void userMain::sortTable(){
 }
 
 void userMain::searchTable() {
-    // Create a dialog to input search criteria
     QDialog searchDialog(this);
     QVBoxLayout layout(&searchDialog);
 
@@ -108,7 +106,7 @@ void userMain::searchTable() {
         for (int row = 0; row < model->rowCount(); ++row) {
             QString cellText = model->item(row, column)->text();
             if (cellText.contains(searchTerm, Qt::CaseInsensitive)) {
-                tableView->selectRow(row); // Highlight the found row in the table
+                tableView->selectRow(row);
                 found = true;
                 break;
             }
@@ -128,7 +126,7 @@ void userMain::borrowBook() {
         QString bookNameOrID = QInputDialog::getText(this, "Enter Book Name or ID", "Book Name or ID:", QLineEdit::Normal, "", &ok);
 
         if (ok && !bookNameOrID.isEmpty()) {
-            // Check if the book exists
+            // Check if book exists
             bool bookExists = false;
             int idColumn = 0;
             int nameColumn = 1;
