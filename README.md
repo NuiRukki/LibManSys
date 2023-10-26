@@ -77,7 +77,8 @@ The following files are unnecessary:
    * Borrow Book merely creates a text file containing user name and book id or book name
 
 ### Version 5: ###
- * Created Ticketing
+ * Created Ticketing implementation
+ * Missing feature: **Once a book has been borrowed or is no longer in inventory, pending tickets with the same book will be automatically cancelled.**
 
 ## Extra Documentation:
 The programmers made use of youtube to learn Qt. The following are a few of the videos that were viewed and studied by the programmers while learning the software:
