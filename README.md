@@ -76,6 +76,9 @@ The following files are unnecessary:
    * Searching is overly-specific, making it difficult to search by description
    * Borrow Book merely creates a text file containing user name and book id or book name
 
+### Version 5: ###
+ * Created Ticketing
+
 ## Extra Documentation:
 The programmers made use of youtube to learn Qt. The following are a few of the videos that were viewed and studied by the programmers while learning the software:
 * [How To Install Qt Creator on Windows 11 (2023)](https://www.youtube.com/watch?v=OoVNt-KJ96w) by ProgrammingKnowledge
